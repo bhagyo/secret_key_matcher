@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator and Matcher</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="generate-section">
+            <button id="generate-btn">Generate Secret Key</button>
+            <div id="generated-key" class="key-display"></div>
+        </div>
+        <div class="input-section">
+            <label for="pin-input">Enter PIN:</label>
+            <div id="pin-input" class="key-display"></div>
+            <div class="keypad">
+                <button class="keypad-btn">1</button>
+                <button class="keypad-btn">2</button>
+                <button class="keypad-btn">3</button>
+                <button class="keypad-btn">4</button>
+                <button class="keypad-btn">5</button>
+                <button class="keypad-btn">6</button>
+                <button class="keypad-btn">7</button>
+                <button class="keypad-btn">8</button>
+                <button class="keypad-btn">9</button>
+                <button class="keypad-btn">0</button>
+                <button id="backspace-btn" class="keypad-btn">x</button>
+                <button id="clear-btn" class="keypad-btn">Clear</button>
+                <button id="submit-btn" class="keypad-btn">Submit</button>
+            </div>
+            <div id="message"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
