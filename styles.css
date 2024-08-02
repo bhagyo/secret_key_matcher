@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #000;
+    color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 900px;
+    width: 100%;
+}
+
+.generate-section, .input-section {
+    flex: 1;
+    margin: 10px;
+}
+
+#generate-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+#generate-btn:hover {
+    background-color: #0056b3;
+}
+
+.key-display {
+    background-color: #444;
+    color: white;
+    padding: 30px;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 24px;
+    border-radius: 5px;
+}
+
+.input-section {
+    text-align: center;
+}
+
+.keypad {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.keypad-btn {
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.keypad-btn:hover {
+    background-color: #333;
+}
+
+#backspace-btn {
+    background-color: #ffc107;
+    color: black;
+}
+
+#clear-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+#submit-btn {
+    background-color: #28a745;
+    color: white;
+}
+
+#message {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+    .keypad {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .keypad {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
