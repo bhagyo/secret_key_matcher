@@ -20,7 +20,8 @@ body {
     width: 100%;
 }
 
-.generate-section, .input-section {
+.generate-section,
+.input-section {
     flex: 1;
     margin: 10px;
 }
